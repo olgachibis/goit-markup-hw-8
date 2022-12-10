@@ -1,0 +1,134 @@
+address {
+    font-style: normal;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $bg-footer;
+
+}
+
+.footer-main .logo {
+    margin-bottom: 20px;
+}
+
+.footer-general {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-footer {
+    margin-left: 70px;
+    
+    .social-link {
+                fill: $secondary-white-color;
+            background-color: rgba(255, 255, 255, 0.1);
+    .icon {
+            fill: $secondary-white-color;
+        }
+        }
+                
+.social-icons {
+    margin: 0;
+}
+}
+
+
+.footer-contacts .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts .address {
+    color: $secondary-white-color;
+}
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+    color: $accent-color;
+
+}
+
+.footer-contacts .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.subscribe {
+    margin-left: auto;
+}
+
+.form-field-footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-field-footer input {
+    width: 358px;
+    height: 50px;
+
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: 0;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-footer input::placeholder {
+    font-size: 16px;
+    line-height: calc(20/16);
+
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.mail-holder {
+    color: $secondary-white-color;
+    &:hover,
+    &:focus {
+            border-color: $accent-color;
+            }
+}
+
+.subscribe-button {
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $secondary-white-color;
+    box-shadow: 0;
+    border-radius: 4px;
+
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    border-color: transparent;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            background-color: $accent-color;
+            cursor: pointer;
+        }
+}
+
+.submit-icon {
+    fill: $secondary-white-color;
+    margin-left: 10px;
+}
