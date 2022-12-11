@@ -1,7 +1,12 @@
 .benefits {
-    padding-top: 94px;
+    padding-top: 60px;
     
 }
+    @media screen and (min-width: 1200px) {
+       .benefits{ 
+        padding-top: 94px;
+    }
+    }
 
 .benefits-list .title {
     margin-bottom: 10px;

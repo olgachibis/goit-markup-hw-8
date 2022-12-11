@@ -86,11 +86,13 @@
  }
 
  .section {
-     padding-top: 94px;
-     padding-bottom: 94px;
 
-     @media screen and (max-width: 1199px) {
-         padding-top: 30px;
-         padding-bottom: 30px;
+     padding-bottom: 60px;
+ }
+
+     @media screen and (min-width: 1200px) {
+         
+         .benefits{
+            padding-bottom: 94px;
      }
  }
