@@ -13,15 +13,28 @@ address {
     margin-bottom: 20px;
 }
 
-.footer-general {
+@media screen and (min-width: 1200px) {
+.footer-general
+{ 
     display: flex;
-    align-items: baseline;
+        align-items: baseline;
+    }
+}
+@media screen and (max-width: 1199px) {
+.logo-address {
+    text-align: center;
+
+    .logo {
+        margin-right: auto;
+    }}
 }
 
 .social-footer {
-    margin-left: 70px;
-    
-    .social-link {
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        .social-link {
                 fill: $secondary-white-color;
             background-color: rgba(255, 255, 255, 0.1);
     .icon {
@@ -33,8 +46,13 @@ address {
     margin: 0;
 }
 }
-
-
+@media screen and (min-width: 1200px) {
+    .social-footer {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 70px;
+    }
+}
 .footer-contacts .link {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -61,16 +79,19 @@ address {
 .subscribe {
     margin-left: auto;
 }
-
-.form-field-footer {
+@media screen and (min-width: 1200px)
+{
+ .form-field-footer {
     display: flex;
     align-items: flex-end;
 }
+}
 
 .form-field-footer input {
-    width: 358px;
+    width: 100%;
     height: 50px;
-
+    @media screen and (min-width: 1200px) {
+width: 358px;}
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -91,6 +112,7 @@ address {
 }
 
 .mail-holder {
+     
     color: $secondary-white-color;
     &:hover,
     &:focus {
@@ -116,7 +138,12 @@ address {
 
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+   @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   }
+   margin-left: 12px;
     border-color: transparent;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -131,4 +158,27 @@ address {
 .submit-icon {
     fill: $secondary-white-color;
     margin-left: 10px;
+}
+// @media screen and (min-width: 768px) and (max-width:1199px) 
+// {
+//     .tablet-footer{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin-top: 60px;
+//         margin-bottom: 60px;
+//         padding-left: 76px;
+//         .social-footer{padding: 0;
+//         margin: 0px;}
+//     }
+// }
+.tablet-footer {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+
+        @media screen and (max-width: 1199px) {
+            justify-content: center;
+        }
+    }
 }

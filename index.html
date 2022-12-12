@@ -202,7 +202,11 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="our-team list">
                     <li class="our-team__item">
-                        <img class="team-img img" src="image/pd.jpg" alt="Ігор" width="270" height="260">
+                        <img class="team-img" srcset="./image/igor@1x.jpg 270w,./image/igortablet@1x.jpg 354w, 
+                        ./image/igormobile@1x.jpg 450w,./image/igor@2x.jpg 540w, ./image/igortablet@2x.jpg 708w,
+                        ./image/igormobile@2x.jpg 900w" 
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100%"  src="image/igor1x.jpg" alt="Ігор">
                         <div class="team-description">
                             <h3 class="team-member">Ігор Дем'яненко</h3>
                             <p class="profession">Product Designer</p>
@@ -238,7 +242,11 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="team-img" src="image/fd.jpg" alt="Ольга" width="270" height="260">
+                        <img class="team-img" srcset="./image/olga@1x.jpg 270w,./image/olgatablet@1x.jpg 354w, 
+                                                ./image/olgamobile@1x.jpg 450w,./image/olga@2x.jpg 540w, ./image/molgtablet@2x.jpg 708w,
+                                                ./image/olgamobile@2x.jpg 900w" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 
+                                                (min-width: 480px) 450px, 100%"
+                        src="image/olga1x.jpg" alt="Ольга"  width="270px" height="260">
                         <div class="team-description">
                             <h3 class="team-member">Ольга Рєпіна</h3>
                             <p class="profession">Frontend Developer</p>
@@ -274,7 +282,11 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="team-img" src="image/marketing.jpg" alt="Микола" width="270" height="260">
+                        <img class="team-img" srcset="./image/mikola@1x.jpg 270w,./image/mikolatablet@1x.jpg 354w, 
+                                                ./image/mikolamobile@1x.jpg 450w,./image/mikola@2x.jpg 540w, ./image/mikolatablet@2x.jpg 708w,
+                                                ./image/mikolamobile@2x.jpg 900w" 
+                                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 
+                                                (min-width: 480px) 450px, 100%" src="./image/mikola@1x.jpg" >
                         <div class="team-description">
                             <h3 class="team-member">Микола Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -310,7 +322,10 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="team-img" src="image/uid.jpg" alt="Михайло" width="270" height="260">
+                        <img class="team-img" srcset="./image/misha@1x.jpg 270w,./image/mishatablet@1x.jpg 354w, 
+                        ./image/mishamobile@1x.jpg 450w,./image/misha@2x.jpg 540w, ./image/mishatablet@2x.jpg 708w,
+                        ./image/mishamobile@2x.jpg 900w" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100%" src="./image/misha@1x.jpg" alt="Михайло"  width="270px" height="260">
                         <div class="team-description">
                             <h3 class="team-member">Михайло Єрмаков</h3>
                             <p class="profession">UI Designer</p>
@@ -402,9 +417,10 @@
             </div>
         </section>
     </main> 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-main">
             <div class="footer-general">
+                <div class="tablet-footer">
                 <div class="logo-address">
                     <a href="" class="logo">
                         <span class="logo-color">Web</span><span class="logo-color-name">Studio</span></a>
@@ -452,6 +468,7 @@
                         </li>
                     </ul>
                 </div>
+                </div>
                 <form class="subscribe">
                     <p class="footer-title">Підпишиться на розсилку</p>
                     <div class="form-field-footer">
@@ -466,7 +483,7 @@
             </div>
         </div>
         </form>
-    </footer> --> -->
+    </footer> 
     <script>
         (() => {
             document.querySelector('.js-speaker-form').addEventListener('submit', e => {
