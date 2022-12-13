@@ -29,9 +29,10 @@
     align-items: center;
     justify-content: center;
 
-    margin: 0;
+    margin-left: auto;
     padding: 0;
     background-color: transparent;
+    color: $secondary-white-color;
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -46,17 +47,22 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $accent-color;
 }
 
 .menu-container {
     position: fixed;
     top: 0;
     left: 0;
+
+    display: flex;
+    flex-direction: column;
+
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 40px;
+        overflow: scroll;
+    background-color: $secondary-white-color;
     z-index: 999;
 
     transform: translateX(100%);
@@ -71,19 +77,63 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: $secondary-white-color;
 }
 
 .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+
+    margin-bottom: auto;
 }
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: $primary-text-color;
     text-decoration: none;
+    font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47 / 40);
+        letter-spacing: 0.02em;
+}
+.mobile-menu-link.current {
+    color: $accent-color;
+}
+.mobile-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        letter-spacing: 0.02em;
+        color: $accent-color;
+}
+.mobile-socials-link{
+font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}
+.mobile-contacts-tel {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 32px;
 }
 
+.mobile-contacts-mail {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    margin-bottom: 64px;
+}

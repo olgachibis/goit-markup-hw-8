@@ -46,13 +46,8 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <ul class="social-links">
-                <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
-                <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
-                <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
-                <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
-            </ul>
-<button class="button button-icon menu-toggle js-open-menu">
+            
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
     <svg class="head-nav__icon" width="40" height="40">
         <use href="./image/icons.svg#icon-menu"></use>
     </svg>
@@ -434,6 +429,8 @@
         </div>
         </form>
     </footer> 
+    <!--Модальне вікно  -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-icon" type="button" data-modal-close>
@@ -490,15 +487,52 @@
                 <button class="feedback" type="submit">Відправити</button>
             </form>
         </div>
+    </div>
         <!-- Header mobile window -->
-        <div class="container menu-container js-menu-container" id="mobile-menu">
-            <button class="button button-icon menu-toggle menu-container__menu-toggle js-close-menu">
-                <svg class="menu-container__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-close-mb"></use>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="head-nav__icon" width="40" height="40">
+                    <use href="./image/icons.svg#icon-close-mb"></use>
                 </svg>
             </button>
-                
-        </div>
+        
+            <ul class="mobile-menu">
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link current" href="">Студія</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">Портфоліо</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">Контакти</a>
+                </li>
+            </ul>
+            
+            <ul class="mobile-contacts list">
+                <li class="mobile-contacts-item">
+                    <a href="" class="mobile-contacts-tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts-item">
+                    <a href="" class="mobile-contacts-mail mail link">info@devstudio.com</a>
+                </li>
+            </ul>
+            
+            <ul class="mobile-socials list">
+                <li class="mobile-socials-item">
+                    <a href="" class="mobile-social-link link">Instagram</a>
+                </li>
+                <li class="mobile-socials-item">
+                    <a href="" class="mobile-social-link link">Twitter</a>
+                </li>
+                <li class="mobile-socials-item">
+                    <a href="" class="mobile-social-link link">Facebook</a>
+                </li>
+                <li class="mobile-socials-item">
+                    <a href="" class="mobile-social-link link">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+
     <script>
         (() => {
             document.querySelector('.js-speaker-form').addEventListener('submit', e => {
@@ -512,6 +546,9 @@
     </script>
 
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 
