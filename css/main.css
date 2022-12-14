@@ -507,12 +507,18 @@ img {
 }
 
 .contract span {
-  margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
+  margin: auto;
+}
+@media screen and (min-width: 1200px) {
+  .contract span {
+    font-size: 14px;
+  }
 }
 
 .checkbox {
@@ -650,7 +656,7 @@ img {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  margin: 10px;
   color: #212121;
   text-decoration: none;
   font-weight: 500;
@@ -675,7 +681,6 @@ img {
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
-  color: #2196F3;
 }
 
 .mobile-socials-link {
@@ -684,6 +689,10 @@ img {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+.mobile-socials-link .social-link {
+  padding-right: 10px;
+  color: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-contacts-tel {
@@ -716,6 +725,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .main-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .nav-list {
@@ -802,10 +817,10 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   .contacts__item:first-child {
-    padding-top: 21px;
+    margin-top: 21px;
   }
 }
 
@@ -968,6 +983,11 @@ img {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .our-clients {
+    padding-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
@@ -1084,10 +1104,16 @@ address {
     margin-right: auto;
   }
 }
-.social-footer {
-  margin-left: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-footer {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .social-footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 .social-footer .social-link {
   fill: #FFFFFF;
@@ -1154,6 +1180,12 @@ address {
   outline: 0;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-field-footer input {
+    width: 450px;
+    margin-left: 159px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-field-footer input {
@@ -1352,8 +1384,13 @@ address {
 }
 
 .team {
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+  }
 }
 
 .our-team {
@@ -1440,11 +1477,14 @@ address {
 }
 
 .social-icons {
-  margin: 16px 32px 0px 32px;
+  margin-bottom: 16px;
   gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .social-icons .icon {
   fill: #AFB1B8;

@@ -30,10 +30,14 @@ address {
 }
 
 .social-footer {
-    margin-left: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+   
+    }
+     @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;}
+    
         .social-link {
                 fill: $secondary-white-color;
             background-color: rgba(255, 255, 255, 0.1);
@@ -90,6 +94,11 @@ address {
 .form-field-footer input {
     width: 100%;
     height: 50px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+   margin-left: 159px; }
+
     @media screen and (min-width: 1200px) {
 width: 358px;}
     background-color: inherit;
@@ -159,19 +168,7 @@ width: 358px;}
     fill: $secondary-white-color;
     margin-left: 10px;
 }
-// @media screen and (min-width: 768px) and (max-width:1199px) 
-// {
-//     .tablet-footer{
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: space-between;
-//         margin-top: 60px;
-//         margin-bottom: 60px;
-//         padding-left: 76px;
-//         .social-footer{padding: 0;
-//         margin: 0px;}
-//     }
-// }
+
 .tablet-footer {
     @media screen and (min-width: 768px) {
         display: flex;

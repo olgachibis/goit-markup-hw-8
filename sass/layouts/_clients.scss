@@ -1,10 +1,16 @@
     .our-clients {
             display: flex;
             flex-wrap: wrap;
- 
+        }
+       
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+                   .our-clients  {
+            padding-top: 60px;
+        
+    }
             
             }
-            
+        
 @media screen and (min-width: 1200px) {
     .section-title {
     font-size: 36px;
